@@ -1,9 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { BookOpen, FileQuestion, Loader2, Send, Sigma } from "lucide-react";
+import { BookOpen, FileQuestion, Loader2, Send } from "lucide-react";
 import { FeedbackPanel } from "@/components/feedback-panel";
 import { ImageUpload } from "@/components/image-upload";
+import { SiteHeader } from "@/components/site-header";
 import { cn, fileToDataUrl } from "@/lib/utils";
 import type { ExamType, SubmissionMode, UploadedImage } from "@/lib/types";
 
@@ -82,18 +83,16 @@ export default function Home() {
 
   return (
     <div className="paper-grid min-h-screen">
+      <SiteHeader />
+
       <main className="mx-auto max-w-6xl px-5 py-8 sm:px-6 sm:py-10">
         <div className="mb-8 animate-fade-up">
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[var(--color-border)] bg-white/70 px-3 py-1.5 text-xs text-[var(--color-ink-muted)]">
-            <Sigma className="h-3.5 w-3.5 text-[var(--color-accent)]" />
-            SMC · BMO · STEP · TMUA
-          </div>
           <h1 className="font-[family-name:var(--font-display)] text-3xl leading-tight text-[var(--color-ink)] sm:text-4xl">
-            Math Tutor
+            Get feedback on your maths
           </h1>
           <p className="mt-2 max-w-xl text-sm leading-relaxed text-[var(--color-ink-muted)]">
-            Upload a question and your working. Get detailed feedback on your
-            approach and solution.
+            Upload a question and your working. We&apos;ll review your approach
+            and guide you toward the full solution.
           </p>
         </div>
 

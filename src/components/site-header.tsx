@@ -5,7 +5,7 @@ const EXAMS = ["SMC", "BMO", "STEP", "TMUA"] as const;
 export function SiteHeader() {
   return (
     <header className="site-header sticky top-0 z-50">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3.5 sm:px-6">
+      <div className="mx-auto flex h-full max-w-6xl items-center justify-between gap-4 px-5 sm:px-6">
         <div className="flex min-w-0 items-center gap-3">
           <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[var(--color-ink)] shadow-sm">
             <Sigma className="h-4 w-4 text-white" strokeWidth={2.25} />

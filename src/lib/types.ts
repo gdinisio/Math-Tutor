@@ -1,12 +1,6 @@
 export type SubmissionMode = "single" | "test";
 
-export type ExamType =
-  | "SMC"
-  | "STEP"
-  | "BMO"
-  | "AIME"
-  | "Olympiad"
-  | "Other";
+export type ExamType = "SMC" | "BMO" | "STEP" | "TMUA" | "Other";
 
 export interface FeedbackRequest {
   mode: SubmissionMode;

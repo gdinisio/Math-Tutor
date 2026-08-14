@@ -2,10 +2,9 @@ import type { FeedbackRequest } from "./types";
 
 const EXAM_CONTEXT: Record<string, string> = {
   SMC: "Senior Mathematical Challenge (UKMT) — multiple choice and proof-style questions for ages 16–18.",
-  STEP: "Sixth Term Examination Paper — Cambridge entrance exam with rigorous proof-based questions.",
   BMO: "British Mathematical Olympiad — olympiad-level proof problems requiring deep insight.",
-  AIME: "American Invitational Mathematics Examination — integer answers, clever algebraic and combinatorial problems.",
-  Olympiad: "General mathematical olympiad — full written proofs expected with clear logical structure.",
+  STEP: "Sixth Term Examination Paper — Cambridge entrance exam with rigorous proof-based questions.",
+  TMUA: "Test of Mathematics for University Admission — multiple choice and proof-style questions testing mathematical thinking.",
   Other: "General advanced mathematics competition or problem set.",
 };
 

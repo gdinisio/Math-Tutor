@@ -7,7 +7,7 @@ export const maxDuration = 60;
 
 const feedbackSchema = z.object({
   mode: z.enum(["single", "test"]),
-  examType: z.enum(["SMC", "STEP", "BMO", "AIME", "Olympiad", "Other"]),
+  examType: z.enum(["SMC", "BMO", "STEP", "TMUA", "Other"]),
   questionImages: z.array(z.string()).min(1, "At least one question image is required"),
   answerImages: z.array(z.string()).min(1, "At least one answer image is required"),
   notes: z.string().optional(),
